@@ -121,6 +121,13 @@ PROVIDER_CAPABILITIES: dict[str, dict[str, Any]] = {
         "supports_tools": False,
         "system_in_messages": True,
     },
+    # Google Gemini (OpenAI-compatible)
+    "gemini": {
+        "supports_response_format": True,
+        "supports_streaming": True,
+        "supports_tools": True,
+        "system_in_messages": True,
+    },
 }
 
 # Default capabilities for unknown providers (assume OpenAI-compatible)
